@@ -6,4 +6,7 @@ const aboutLink = document.getElementById("about-link");
         }
         aboutLink.addEventListener("click", aboutMessageDisplay);
 
-        
+//Form events
+
+
+    
