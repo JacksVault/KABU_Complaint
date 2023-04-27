@@ -5,3 +5,5 @@ const aboutLink = document.getElementById("about-link");
           alert(aboutMessage);
         }
         aboutLink.addEventListener("click", aboutMessageDisplay);
+
+        
