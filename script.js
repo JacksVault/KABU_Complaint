@@ -1,3 +1,26 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBTItXoyGfCBoXyKFdvR2M0afOvT8TO8vI",
+  authDomain: "kabucomplaints.firebaseapp.com",
+  projectId: "kabucomplaints",
+  storageBucket: "kabucomplaints.appspot.com",
+  messagingSenderId: "209180458172",
+  appId: "1:209180458172:web:e486c4deead2b3d3ff24b9",
+  measurementId: "G-CZKTWCEZGE"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+//form
 const complaintForm = document.getElementById('complaint-form');
 const successMessage = document.getElementById('success-message');
 const errorMessage = document.getElementById('error-message');
@@ -28,6 +51,7 @@ complaintForm.addEventListener('submit', (e) => {
     }
   });
 });
+
 
 //About
 const aboutLink = document.getElementById("about-link");
